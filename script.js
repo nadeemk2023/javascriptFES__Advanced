@@ -8,6 +8,7 @@ showRating(0.5); // returns '.'
 
 */
 
+//? My attempt
 function showRating(rating) {
   if (Number.isInteger(rating)) {
     return '*'.repeat(rating);
@@ -16,4 +17,18 @@ function showRating(rating) {
   }
 }
 
-console.log(showRating(3.5));
+// console.log(showRating(3.5));
+
+//? David's Solution
+function showRatingSol(rating) {
+  let ratings = '';
+  for (let i = 0; i < rating; i++) {
+    ratings = ratings + '*';
+    if (i !== rating - 1) {
+      ratings = ratings + ' ';
+    }
+  }
+  return ratings;
+}
+
+console.log(showRatingSol(4));
