@@ -33,4 +33,24 @@ function showRatingSol(rating) {
   }
   return ratings;
 }
-console.log(showRatingSol(3.5));
+// console.log(showRatingSol(3.5));
+
+/* #2. Sort by lowest to highest price
+Give an array of number, return the prices sorted by low to high.
+
+Example:
+sortLowToHigh([20,40,10,30,50,10]) => [10,10,20,30,40,50]
+
+sortLowToHigh([5,10,0,-5]) => [-5,0,5,10]
+
+sortLowToHigh([3,2,1,0]) => [0,1,2,3]
+
+
+*/
+
+//? My Attempt
+function sortLowToHigh(prices) {
+  return prices.sort((a, b) => a - b);
+}
+
+console.log(sortLowToHigh([20, 40, 10, 30, 50, 10]));
