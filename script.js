@@ -22,13 +22,15 @@ function showRating(rating) {
 //? David's Solution
 function showRatingSol(rating) {
   let ratings = '';
-  for (let i = 0; i < rating; i++) {
-    ratings = ratings + '*';
-    if (i !== rating - 1) {
-      ratings = ratings + ' ';
+  for (let i = 0; i < Math.floor(rating); i++) {
+    ratings += '*';
+    if (i !== Math.floor(rating) - 1) {
+      ratings += ' ';
     }
+  }
+  if (!Number.isInteger(rating)) {
+    ratings += ' .';
   }
   return ratings;
 }
-
-console.log(showRatingSol(4));
+console.log(showRatingSol(3.5));
