@@ -1,4 +1,5 @@
-/* #1. Show Rating
+//! #1. Show Rating
+/* 
 Given a rating, display a star (*) for each whole number, and a full stop (.) for each half rating.
 
 Example:
@@ -35,7 +36,8 @@ function showRatingSol(rating) {
 }
 // console.log(showRatingSol(3.5));
 
-/* #2. Sort by lowest to highest price
+//! #2. Sort by lowest to highest price
+/*  
 Give an array of number, return the prices sorted by low to high.
 
 Example:
@@ -49,8 +51,15 @@ sortLowToHigh([3,2,1,0]) => [0,1,2,3]
 */
 
 //? My Attempt
-function sortLowToHigh(prices) {
-  return prices.sort((a, b) => a - b);
+function sortLowToHigh(numbers) {
+  return numbers.sort((a, b) => a - b);
 }
 
-console.log(sortLowToHigh([20, 40, 10, 30, 50, 10]));
+// console.log(sortLowToHigh([20, 40, 10, 30, 50, 10]));
+
+//? David's Solution
+function sortLowToHighSol(numbers) {
+  return numbers.sort((a, b) => a - b);
+}
+
+console.log(sortLowToHighSol([1, 5, 0, 10, 1000005, 2000, 2]));
