@@ -62,4 +62,50 @@ function sortLowToHighSol(numbers) {
   return numbers.sort((a, b) => a - b);
 }
 
-console.log(sortLowToHighSol([1, 5, 0, 10, 1000005, 2000, 2]));
+// console.log(sortLowToHighSol([1, 5, 0, 10, 1000005, 2000, 2]));
+
+//! #3. Sort by highest to lowest price
+/*
+Give an array of objects, return the prices sorted by high to low.
+
+sortHighToLow([
+{id: 1, price: 50},
+{id: 2, price: 30},
+{id: 3, price: 60},
+{id: 4, price: 10},
+])
+
+=> 
+  [
+  {id: 3, price: 60},
+  {id: 1: price: 50},
+  {id:2, price: 30},
+  {id: 4, price: 10}
+  ]
+*/
+
+//? My Attempt
+function sortHighToLow(arr) {
+  return arr.sort((a, b) => b.price - a.price);
+}
+
+console.log(
+  sortHighToLow([
+    {
+      id: 1,
+      price: 50,
+    },
+    {
+      id: 2,
+      price: 30,
+    },
+    {
+      id: 3,
+      price: 60,
+    },
+    {
+      id: 4,
+      price: 10,
+    },
+  ])
+);
