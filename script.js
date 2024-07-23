@@ -114,3 +114,18 @@ function sortHighToLow(arr) {
 function sortHighToLowSol(arr) {
   return arr.sort((a, b) => b.price - a.price);
 }
+
+//! #4. Promises
+/*
+On Youtube, watch:
+
+'The Async Await Episode I Promised'
+ - Fireship
+
+'Async Await JavaScript ES7'
+ - Techsith (1.5x Speed)
+
+'Async JS Crash Course - Callbacks, Promises, Async Await'
+  - Traversy Media
+
+*/
