@@ -121,11 +121,20 @@ On Youtube, watch:
 
 'The Async Await Episode I Promised'
  - Fireship
+ https://www.youtube.com/watch?v=vn3tm0quoqE
 
 'Async Await JavaScript ES7'
  - Techsith (1.5x Speed)
+ https://www.youtube.com/watch?v=IGoAdn-e5II
 
 'Async JS Crash Course - Callbacks, Promises, Async Await'
   - Traversy Media
+  https://www.youtube.com/watch?v=PoRJizFvM7s
 
+  Additional Resources:
+  https://www.youtube.com/watch?v=cCOL7MC4Pl0 - event loop talk by Jake Archibald
+
+  https://www.youtube.com/watch?v=ueOG5uk7zo8 - Callbacks = Digital Fluency
+
+  Each Video is around at least 30 minutes long.
 */
