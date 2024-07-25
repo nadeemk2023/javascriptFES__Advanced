@@ -137,4 +137,7 @@ On Youtube, watch:
   https://www.youtube.com/watch?v=ueOG5uk7zo8 - Callbacks = Digital Fluency
 
   Each Video is around at least 30 minutes long.
+
+  important notes:
+  Async functions always return a promise.
 */
