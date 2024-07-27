@@ -140,4 +140,7 @@ On Youtube, watch:
 
   important notes:
   Async functions always return a promise.
+
+  The event loop consists primarily of 3 components:
+  1. 
 */
