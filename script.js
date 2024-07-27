@@ -141,6 +141,5 @@ On Youtube, watch:
   important notes:
   Async functions always return a promise.
 
-  The event loop consists primarily of 3 components:
-  1. 
+  The event loop executes one task from the macro-task queue (such as script) and then one task from the micro-task queue (such as promise). But if the micro-task queue is not empty, the event loop will keep executing tasks from the micro-task queue until it is empty before moving to the macro-task queue or rendering.
 */
