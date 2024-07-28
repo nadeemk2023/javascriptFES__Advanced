@@ -142,4 +142,34 @@ On Youtube, watch:
   Async functions always return a promise.
 
   The event loop executes one task from the macro-task queue (such as script) and then one task from the micro-task queue (such as promise). But if the micro-task queue is not empty, the event loop will keep executing tasks from the micro-task queue until it is empty before moving to the macro-task queue or rendering.
-*/
+
+
+  Promise.all() - takes an array of promises and resolves when all the promises have resolved, meaning it will wait for all the promises to resolve before returning a single promise.
+
+  ADDITIONAL NOTES IN NOTION -> FES -> WEEK 3
+  */
+
+//! #5. Find all posts by a single user
+/*
+  Call this API: "https://jsonplaceholder.typicode.com/posts" and return all the posts by any given user ID.
+
+  */
+
+//? My Attempt with fetch
+function postsByUserFetch(userId) {
+  fetch('https://jsonplaceholder.typicode.com/posts')
+    .then(res => res.json())
+    .then(data => console.log(data.filter(post => post.userId === userId)));
+}
+// postsByUserFetch(4);
+
+//? My Attempt with async/await
+async function postsbyUserAsync(userId) {
+  const res = await fetch('https://jsonplaceholder.typicode.com/posts');
+  const data = await res.json();
+  console.log(data.filter(post => post.userId === userId));
+}
+
+// postsbyUserAsync(5);
+
+//? David's Solution
