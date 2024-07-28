@@ -173,3 +173,12 @@ async function postsbyUserAsync(userId) {
 // postsbyUserAsync(5);
 
 //? David's Solution
+async function postsByUserSol(userId) {
+  const promise = await fetch('https://jsonplaceholder.typicode.com/posts');
+
+  const result = await promise.json();
+  const posts = result.filter(element => element.userId === userId);
+  console.log(posts);
+}
+
+// postsByUserSol(4);
