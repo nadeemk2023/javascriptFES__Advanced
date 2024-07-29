@@ -188,3 +188,23 @@ async function postsByUserSol(userId) {
   Call this API: "https://jsonplaceholder.typicode.com/todos" and return the first 6 incomplete todos from the result.
 
 */
+
+//? My Attempt with fetch
+function firstSixIncompleteFetch() {
+  fetch('https://jsonplaceholder.typicode.com/todos')
+    .then(res => res.json())
+    .then(data =>
+      console.log(data.filter(todo => todo.completed === false).slice(0, 6))
+    );
+}
+
+// firstSixIncompleteFetch();
+
+async function firstSixIncompleteAsync() {
+  const res = await fetch('https://jsonplaceholder.typicode.com/todos');
+  const data = await res.json();
+
+  console.log(data.filter(todo => todo.completed === false).slice(0, 6));
+}
+
+firstSixIncompleteAsync();
