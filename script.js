@@ -182,3 +182,9 @@ async function postsByUserSol(userId) {
 }
 
 // postsByUserSol(4);
+
+//! #6. First 6 Incomplete Todos
+/*
+  Call this API: "https://jsonplaceholder.typicode.com/todos" and return the first 6 incomplete todos from the result.
+
+*/
