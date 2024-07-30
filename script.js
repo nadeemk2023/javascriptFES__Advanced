@@ -200,6 +200,7 @@ function firstSixIncompleteFetch() {
 
 // firstSixIncompleteFetch();
 
+//? My attempt with async/await
 async function firstSixIncompleteAsync() {
   const res = await fetch('https://jsonplaceholder.typicode.com/todos');
   const data = await res.json();
@@ -207,4 +208,18 @@ async function firstSixIncompleteAsync() {
   console.log(data.filter(todo => todo.completed === false).slice(0, 6));
 }
 
-firstSixIncompleteAsync();
+// firstSixIncompleteAsync();
+
+//? David's Solution
+async function firstSixIncompleteSol() {
+  const promise = await fetch('https://jsonplaceholder.typicode.com/todos');
+
+  const result = await promise.json();
+
+  const incompleteTasks = result
+    .filter(element => !element.completed)
+    .slice(0, 6);
+  console.log(incompleteTasks);
+}
+
+firstSixIncompleteSol();
